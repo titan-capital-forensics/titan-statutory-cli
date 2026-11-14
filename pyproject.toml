@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "titan-statutory-gate"
+version = "0.1.0"
+description = "TITAN Statutory Gate CLI - Zero-dependency statutory applicability diagnostics"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{"name": "TITAN Capital Forensics", "email": "dev@titancapitalforensics.com"}]
+license = {text = "MIT"}
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: MacOS :: MacOS X", "Operating System :: POSIX :: Linux"]
+
+[project.scripts]
+check-cbam = "titan_statutory.cli:main_cbam"
+check-179d = "titan_statutory.cli:main_179d"
+check-einvoice = "titan_statutory.cli:main_einvoice"
+check-qfzp = "titan_statutory.cli:main_qfzp"
+catalog = "titan_statutory.cli:main_catalog"
+
+[project.optional-dependencies]
+dev = []

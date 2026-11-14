@@ -1,0 +1,14 @@
+{
+  "name": "titan-statutory-cli",
+  "version": "0.1.0",
+  "description": "Node wrapper for TITAN Statutory Gate CLI",
+  "main": "bin/cli.js",
+  "bin": {
+    "titan-statutory": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "node bin/cli.js catalog"
+  },
+  "author": "TITAN Capital Forensics",
+  "license": "MIT"
+}
