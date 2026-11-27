@@ -1,14 +1,47 @@
 {
-  "name": "titan-statutory-cli",
-  "version": "0.1.0",
-  "description": "Node wrapper for TITAN Statutory Gate CLI",
+  "name": "@titan-capital-forensics/statutory-cli",
+  "version": "0.2.0",
+  "description": "Zero-dependency statutory applicability diagnostics CLI for TITAN Capital Forensics LLC (Albuquerque, New Mexico, USA)",
   "main": "bin/cli.js",
   "bin": {
     "titan-statutory": "./bin/cli.js"
   },
-  "scripts": {
-    "test": "node bin/cli.js catalog"
+  "files": [
+    "bin/cli.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
   },
-  "author": "TITAN Capital Forensics",
+  "scripts": {
+    "test": "node bin/cli.js --version && node bin/cli.js catalog"
+  },
+  "keywords": [
+    "titan-capital-forensics",
+    "statutory",
+    "compliance",
+    "cbam",
+    "eudr",
+    "179d",
+    "qfzp",
+    "gdpr",
+    "cmmc",
+    "mcp",
+    "ed25519",
+    "cli"
+  ],
+  "homepage": "https://titancapitalforensics.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/titan-capital-forensics/titan-statutory-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/titan-capital-forensics/titan-statutory-cli/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "TITAN Capital Forensics LLC (Albuquerque, New Mexico, USA)",
   "license": "MIT"
 }

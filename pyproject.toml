@@ -4,20 +4,24 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "titan-statutory-gate"
-version = "0.1.0"
-description = "TITAN Statutory Gate CLI - Zero-dependency statutory applicability diagnostics"
+version = "0.2.0"
+description = "TITAN Statutory Gate CLI — Zero-dependency statutory applicability diagnostics for TITAN Capital Forensics LLC (Albuquerque, New Mexico, USA)"
 readme = "README.md"
 requires-python = ">=3.9"
-authors = [{"name": "TITAN Capital Forensics", "email": "dev@titancapitalforensics.com"}]
+authors = [{name = "TITAN Capital Forensics LLC", email = "audit@titancapitalforensics.com"}]
 license = {text = "MIT"}
-classifiers = ["Programming Language :: Python :: 3", "Operating System :: MacOS :: MacOS X", "Operating System :: POSIX :: Linux"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
 
 [project.scripts]
-check-cbam = "titan_statutory.cli:main_cbam"
-check-179d = "titan_statutory.cli:main_179d"
-check-einvoice = "titan_statutory.cli:main_einvoice"
-check-qfzp = "titan_statutory.cli:main_qfzp"
-catalog = "titan_statutory.cli:main_catalog"
+titan-statutory = "titan_statutory.cli:main"
+check-cbam = "titan_statutory.cli:entry_check_cbam"
+check-179d = "titan_statutory.cli:entry_check_179d"
+check-einvoice = "titan_statutory.cli:entry_check_einvoice"
+check-qfzp = "titan_statutory.cli:entry_check_qfzp"
+titan-statutory-catalog = "titan_statutory.cli:entry_catalog"
 
-[project.optional-dependencies]
-dev = []
+[tool.setuptools.packages.find]
+include = ["titan_statutory*"]

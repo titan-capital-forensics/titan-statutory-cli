@@ -1,0 +1,10 @@
+# Build artifacts & local caches
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+.pytest_cache/
+*.tgz
