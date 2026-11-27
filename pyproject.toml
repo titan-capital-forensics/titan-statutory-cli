@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "titan-statutory-gate"
-version = "0.2.0"
+version = "0.2.1"
 description = "TITAN Statutory Gate CLI — Zero-dependency statutory applicability diagnostics for TITAN Capital Forensics LLC (Albuquerque, New Mexico, USA)"
 readme = "README.md"
 requires-python = ">=3.9"

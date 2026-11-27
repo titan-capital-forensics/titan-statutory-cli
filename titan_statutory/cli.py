@@ -29,7 +29,7 @@ import urllib.parse
 from decimal import Decimal, InvalidOperation
 from typing import Any, Dict, List, Optional, Sequence, TextIO, Tuple
 
-CLI_VERSION = "0.2.0"
+CLI_VERSION = "0.2.1"
 DEFAULT_ENDPOINT = "https://mcp.titancapitalforensics.com/mcp"
 DEFAULT_TIMEOUT_MS = 10000
 MAX_BODY_BYTES = 2 * 1024 * 1024  # 2 MiB hard streaming ceiling

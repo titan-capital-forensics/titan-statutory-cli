@@ -19,7 +19,7 @@ const https = require("node:https");
 const crypto = require("node:crypto");
 const { URL } = require("node:url");
 
-const CLI_VERSION = "0.2.0";
+const CLI_VERSION = "0.2.1";
 const DEFAULT_ENDPOINT = "https://mcp.titancapitalforensics.com/mcp";
 const DEFAULT_TIMEOUT_MS = 10000;
 const MAX_BODY_BYTES = 2 * 1024 * 1024; // 2 MiB hard streaming ceiling
